@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
     <title>mi primera web</title>
+    <style> 
+        table, th, td {border: 1px solid black} 
+    </style>
 </head>
 <body>
+    <table style="width: 500px;"><!-- creacion de tablas--> 
+        <thead> <!-- le indica al programa que estaes una cabecera de tabla-->
+            <tr>
+                <th> producto</th><!-- indica los nombres para las cabeceras de la tabla genera una columna-->
+                <th> precio</th>
+            </tr> <!-- hasta aca es la creaciond e encabezados-->
+        </thead>
+        <tbody> <!-- indica al programa que esto es el contenido de la tabla-->
+            <tr> <!-- para la creacion de los demas campos de relleno de la tabla-->
+                <td> hola beats</td> <!-- td define elemntos estandares que se encuentran dentro de la tabla-->
+                <td> gratis</td>
+            </tr>
+            <tr> <!-- para la creacion de los demas campos de relleno de la tabla-->
+                <td> chanchito feliz</td> <!-- td define elemntos estandares que se encuentran dentro de la tabla-->
+                <td> 19.90$</td>
+            </tr>
+            <tr> <!-- para la creacion de los demas campos de relleno de la tabla-->
+                <td> chanchito feliz muy feliz</td> <!-- td define elemntos estandares que se encuentran dentro de la tabla-->
+                <td> 29.90$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>total: 49.80$</td>
+        </tfoot>
+
+    </table>
     <!-- ul es para listas no ordenadas-->
     <ul> 
         <li> elemnto 1</li>
@@ -16,10 +45,18 @@
     </ul>
      <!-- ol es para listas ordenadas-->
     <ol> 
-        <li> elemnto 1</li>
+        <li value="50"> elemnto 1</li>
         <li> elemnto 2</li>
         <li> elemnto 3</li>
         <li> elemnto 4</li>
+        <!--listas anidadascon cambio de index-->
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">sub elemnto 1</li>
+                <li style="list-style-type: lower-alpha;">sub elemnto 2</li>
+                <li style="list-style-type: lower-alpha;">sub elemnto 3</li>
+            </ol>
+        </li>
 
     </ol>
 
@@ -59,8 +96,8 @@
          y es para enseñar <br>
         la etiqueta span!</p>
 
-        <a target="_blank" href="https://www.google.com"> ir a google</a><br>
-        <img src="jpg/hanna.jpg" width="400" height="400" /> 
+        <a target="_blank" href="https://www.google.com"> ir a google</a><br> <!-- indica una pagina a la cual quiere que se enrute-->
+        <img src="jpg/hanna.jpg" width="400" height="400" /> <!-- colocar una imagen-->
         
 </body>
 </html>
